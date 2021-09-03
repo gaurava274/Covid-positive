@@ -1,0 +1,568 @@
+﻿<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+
+<head>
+<title>Home</title>
+<style type="text/css">
+
+
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  -ms-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+body {
+  background: #F0F0F0;
+  font-size: 15px;
+  color: #666;
+  font-family: 'Roboto', sans-serif;
+}
+.content {
+  height: 200px;
+}
+a { text-decoration: none; }
+
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  width: 30%;
+}
+
+.nav-fostrap {
+  display: block;
+  margin-bottom: 15px 0;
+  background: #03A9F4;
+  -webkit-box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.26);
+  -moz-box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.26);
+  -ms-box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.26);
+  -o-box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.26);
+  box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.26);
+  border-radius: 3px;
+}
+
+.nav-fostrap ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  display: block;
+}
+
+.nav-fostrap li {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  display: inline-block;
+  position: relative;
+  font-size: 14;
+  color: #def1f0;
+}
+
+.nav-fostrap li a {
+  padding: 15px 20px;
+  font-size: 14;
+  color: #def1f0;
+  display: inline-block;
+  outline: 0;
+  font-weight: 400;
+}
+
+.nav-fostrap li:hover ul.dropdown { display: block; }
+
+.nav-fostrap li ul.dropdown {
+  position: absolute;
+  display: none;
+  width: 200px;
+  background: #2980B9;
+  -webkit-box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.26);
+  -moz-box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.26);
+  -ms-box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.26);
+  -o-box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.26);
+  box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.26);
+  padding-top: 0;
+}
+
+.nav-fostrap li ul.dropdown li {
+  display: block;
+  list-style-type: none;
+}
+
+.nav-fostrap li ul.dropdown li a {
+  padding: 15px 20px;
+  font-size: 15px;
+  color: #fff;
+  display: block;
+  font-weight: 400;
+}
+
+.nav-fostrap li ul.dropdown li:last-child a { border-bottom: none; }
+
+.nav-fostrap li:hover a {
+  background: #2980B9;
+  color: #fff !important;
+}
+
+.nav-fostrap li:first-child:hover a { border-radius: 3px 0 0 3px; }
+
+.nav-fostrap li ul.dropdown li:hover a { background: rgba(0,0,0, .1); }
+
+.nav-fostrap li ul.dropdown li:first-child:hover a { border-radius: 0; }
+
+.nav-fostrap li:hover .arrow-down { border-top: 5px solid #fff; }
+
+.arrow-down {
+  width: 0;
+  height: 0;
+  border-left: 5px solid transparent;
+  border-right: 5px solid transparent;
+  border-top: 5px solid #def1f0;
+  position: relative;
+  top: 15px;
+  right: -5px;
+  content: '';
+}
+.title-mobile {
+  display: none;
+}
+ @media only screen and (max-width:900px) {
+
+.nav-fostrap {
+  background: #fff;
+  width: 200px;
+  height: 100%;
+  display: block;
+  position: fixed;
+  left: -200px;
+  top: 0px;
+  -webkit-transition: left 0.25s ease;
+  -moz-transition: left 0.25s ease;
+  -ms-transition: left 0.25s ease;
+  -o-transition: left 0.25s ease;
+  transition: left 0.25s ease;
+  margin: 0;
+  border: 0;
+  border-radius: 0;
+  overflow-y: auto;
+  overflow-x: hidden;
+  height: 100%;
+}
+.title-mobile {
+  position: fixed;
+  display: block;
+    top: 10px;
+    font-size: 20px;
+    left: 100px;
+    right: 100px;
+    text-align: center;
+    color: #FFF;
+}
+.nav-fostrap.visible {
+  left: 0px;
+  -webkit-transition: left 0.25s ease;
+  -moz-transition: left 0.25s ease;
+  -ms-transition: left 0.25s ease;
+  -o-transition: left 0.25s ease;
+  transition: left 0.25s ease;
+}
+
+.nav-bg-fostrap {
+  display: inline-block;
+  vertical-align: middle;
+  width: 100%;
+  height: 50px;
+  margin: 0;
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  background: #03A9F4;
+  padding: 12px 0 0 10px;
+  -webkit-box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.26);
+  -moz-box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.26);
+  -ms-box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.26);
+  -o-box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.26);
+  box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.26);
+}
+
+.navbar-fostrap {
+  display: inline-block;
+  vertical-align: middle;
+  height: 50px;
+  cursor: pointer;
+  margin: 0;
+    position: absolute;
+    top: 0;
+    left: 0;
+    padding: 12px;
+}
+
+.navbar-fostrap span {
+  height: 2px;
+  background: #fff;
+  margin: 5px;
+  display: block;
+  width: 20px;
+}
+
+.navbar-fostrap span:nth-child(2) { width: 20px; }
+
+.navbar-fostrap span:nth-child(3) { width: 20px; }
+
+.nav-fostrap ul { padding-top: 50px; }
+
+.nav-fostrap li { display: block; }
+
+.nav-fostrap li a {
+  display: block;
+  color: #505050;
+  font-weight: 600;
+}
+
+.nav-fostrap li:first-child:hover a { border-radius: 0; }
+
+.nav-fostrap li ul.dropdown { position: relative; }
+
+.nav-fostrap li ul.dropdown li a {
+  background: #2980B9 !important;
+  border-bottom: none;
+  color: #fff !important;
+}
+
+.nav-fostrap li:hover a {
+  background: #03A9F4;
+  color: #fff !important;
+}
+
+.nav-fostrap li ul.dropdown li:hover a {
+  background: rgba(0,0,0,.1); !important;
+  color: #fff !important;
+}
+
+.nav-fostrap li ul.dropdown li a { padding: 10px 10px 10px 30px; }
+
+.nav-fostrap li:hover .arrow-down { border-top: 5px solid #fff; }
+
+.arrow-down {
+  border-top: 5px solid #505050;
+  position: absolute;
+  top: 20px;
+  right: 10px;
+}
+
+.cover-bg {
+  background: rgba(0,0,0,0.5);
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+}
+}
+ @media only screen and (max-width:1199px) {
+
+.container { width: 96%; }
+}
+
+.fixed-top {
+  position: fixed;
+  top: 0;
+  right: 0;
+  left: 0;
+}
+.auto-style1 {
+	font-size: x-large;
+}
+.auto-style2 {
+	font-size: xx-large;
+}
+.auto-style3 {
+	margin-right: 0px;
+}
+.auto-style4 {
+	margin-top: 63px;
+}
+</style>
+<meta content="en-in" http-equiv="Content-Language" />
+<meta content="text/html; charset=utf-8" http-equiv="Content-Type" />
+</head>
+
+<body>
+
+<table style="width: 100%;">
+	<tr>
+		<td style="height: 23px">
+		<img alt="" height="665" src="images.jfif" width="100%" /></td>
+	</tr>
+	<tr>
+		<td>
+		
+<div id="main">
+  <div class="container">
+    <nav>
+      <div class="nav-fostrap">
+        <ul>
+            <li><a href="index.html">Home</a></li>
+          <li><a>Navigate<span class="arrow-down"></span></a>
+            <ul class="dropdown">
+              <li><a href="july.html">July</a></li>
+                          </ul>
+          </li>
+                   
+          
+          <li><a href="aboutus.html">About Us</a></li>
+          <li><a href="contactus.html">Contact Us</a></li>
+        </ul>
+      </div>
+      <div class="nav-bg-fostrap">
+        <a href="" class="title-mobile">Fostrap</a>
+        <div class="navbar-fostrap" style="height: 18px"> </div>
+      </div>
+    </nav>
+</div>
+</div>
+</td>
+	</tr>
+	<tr>
+		<td style="height: 26px" class="auto-style1"><span class="auto-style1">After Lockdown in India, coronavirus pandemic 
+		has finally eclipsed our happy and exciting lifestyle just like the 
+		Bollywood popular classic villain Amrish Puri does to Mr. India. Now we 
+		are stuck in our homes…. Oh I am sorry… we are quarantined for our 
+		safety and health and we are very pissed off. But did you tried to 
+		figure out the other side of the coin…the goodness comes along with this 
+		so called devastating culprit — Coronavirus — the biggest villain of our 
+		life till now. But is he a really a villain, lets see.</span><br class="auto-style1" />
+		<br class="auto-style1" />
+		<br class="auto-style1" />
+		<span class="auto-style1">1. No More Monday Blues</span><br class="auto-style1" />
+		<span class="auto-style1">Yes, it’s Monday and I am very productive that too without any Monday 
+		Madness and I am all gear up for the workweek with my contagious smile. 
+		After COVID-19 and quarantine time, Monday Blues seem a joke to me. 
+		Zoom, Skype, and WhatsApp are my saviors to stay connected with my 
+		wonderful classmates.</span><br class="auto-style1" />
+		<br class="auto-style1" />
+		<img alt="" height="592" src="8.jpeg" width="100%" class="auto-style1" /><br class="auto-style1" />
+		<br class="auto-style1" />
+		<span class="auto-style1">2. Connections Go Deeper </span> 
+		<br class="auto-style1" />
+		<span class="auto-style1">We are more concerned about well beings of our people and taking every 
+		possible initiative to be together even we are quarantined and 
+		maintaining social distancing. Human connections are getting stronger 
+		and we develop a sense of belongingness. Coronavirus pandemic linked us 
+		as a HAPPY SOCIETY TOGETHER and now we respect each other. Covid-19 In 
+		India has pushed societies to change attitudes towards doctors, nurses, 
+		paramedics staff, soldiers, police, delivery person, my cleaning staff, 
+		my drivers, my milkman, and all corona warriors for their dedication and 
+		selfless services, in the face of immense risk.</span><br class="auto-style1" />
+		<br class="auto-style1" />
+		<img alt="" src="img5.jpg" class="auto-style1" /><img alt="" src="img5.jpg" class="auto-style1" /><img alt="" height="728" src="IMG-20200802-WA0006.jpg" width="1280" class="auto-style1" /><br class="auto-style1" />
+		<br class="auto-style1" />
+		<span class="auto-style1">3.</span><strong><span class="auto-style1"> Nature Regain Its Full Glory 
+		</span> </strong><br class="auto-style1" />
+		<span class="auto-style1">We have bright clear blue sky, rivers are more clean, beautiful rainbow 
+		are spotted everywhere, and of course, there have been dramatic falls in 
+		pollution levels. Pleasing sounds of birds have absolutely replaced car 
+		horns during the lockdown. The sighting of bird species like the 
+		yellow-footed green pigeon, purple sunbird, the coppersmith barbet, 
+		common tailorbird, common kingfisher, the woodpecker and several others 
+		— is now very common from our balconies and roofs. Now more monkeys are 
+		seen in the city.</span><br class="auto-style1" />
+		<span class="auto-style1">&nbsp; </span> 
+		<img alt="" height="500" src="Screenshot_2020-08-02-13-39-59-766.jpeg" width="100%" class="auto-style1" /><br class="auto-style1" />
+		<br class="auto-style1" />
+		<span class="auto-style1">4. We Make Conscious Choices Now</span><br class="auto-style1" />
+		<span class="auto-style1">We are getting more conscious about our choices now. Less travel means 
+		less vehicles, Less wastage of pages and natural resources, Earth’s 
+		ozone layer is recovering, Air quality is improving and we said no to 
+		usage of plastic. Most of us are now doing our household chores 
+		ourselves of course with our family members as the helping hands. As it 
+		is very rightly said by Rahm Emanuel, “You never let a serious crisis go 
+		to waste. And what I mean by that it's an opportunity to do things you 
+		think you could not do before.” Maybe this Coronavirus outbreak has 
+		brought the darkest hour of our life, but it has had an unexpected 
+		positive changes in our lifestyle…. and it is not all doom and gloom!!!</span><br class="auto-style1" />
+		<br class="auto-style1" />
+		<img alt="" height="800" src="7.jpg" width="100%" class="auto-style1" /><br class="auto-style1" />
+		<br class="auto-style1" />
+		<span class="auto-style1">5.Gadget friendly</span><br class="auto-style1" />
+		<span class="auto-style1">Now days corona virus has made everyone gadget friendly, now days 
+		everyone is using gadget's . My Grandma who was not able to go to yoga 
+		classes due to transport problem is now able to do yoga online at home. 
+		My father who was totally against giving me gadgets before age himself 
+		bought me a laptop for online classes . Now days we are also playing 
+		games like tam-bola online with our far relatives.</span><br class="auto-style1" />
+		<br class="auto-style1" />
+		<img alt="" height="722" src="Screenshot_2020-08-02-13-49-34-311.jpeg" width="100%" class="auto-style1" /><br class="auto-style1" />
+		<span class="auto-style1">6.Creativity</span><br class="auto-style1" />
+		<span class="auto-style1">Nowadays people are becoming more and creative . Some kids are making 
+		comics on corona and some adults making songs and performing dance on 
+		it. This creativity inspired me to do painting on corona. Till the time 
+		there is no vaccination, I m enjoying prolonged summer vacation</span><br class="auto-style1" />
+		<br class="auto-style1" />
+		<video src="videoplayback.mp4" controls wridth="100%" height="700px" class="auto-style1"></video>
+		<br/>
+		<br/>
+		There is a link below it shows a comic by Goverment of india it is a 
+		nice comic.<br/>
+		<a href="Corona_comic_PGI.pdf"> <p> click me to opean the comic </p>
+		</a><br />
+		<br />
+		<span class="auto-style2"><strong>People are rewatching Tangled and 
+		realizing she was literally quarantined for 18 years<br />
+		</strong></span><br />
+		<br />
+		Rupenzel the best example of how to quarantine while living life to the 
+		fullest.<br />
+		<br />
+		People on Twitter are watching the Disney movie "Tangled" and making 
+		some especially interesting discoveries about the queen of quarantining:<br />
+		<br />
+		<br />
+		Rapunzel's mom was hiding her from 'Corona<br />
+		<br />
+		<br />
+		When watching "Tangled," the name of the town Rapunzel lived in wasn't 
+		really the main concern.<br />
+		<br />
+		But now people rewatching the movie have discovered that she lived in 
+		the Kingdom of Corona.<br />
+		Meaning... Mother Gothel was technically hiding her from Corona.<br />
+		<br />
+		<img alt="" class="auto-style3" height="837" src="a.jpeg" width="873" /><br />
+		<br />
+		<br />
+		<img alt="" height="916" src="b.jpeg" width="861" /><br />
+		<br />
+		A few things Rapunzel taught us about quarantining.<br />
+		<br />
+		<br />
+		After the first few days of social distancing, we're beginning to 
+		realize we don't do much besides watch Netflix and eat too much.<br />
+		<br />
+		So how did Rapunzel do it for 18 years?<br />
+		<br />
+		She found her man while being stuck in a tower.<br />
+		<br />
+		<br />
+		The days of dating are over -- for now. But Rapunzel didn't even have to 
+		leave her tower to find her husband, so maybe we can too? Maybe?<br />
+		<br />
+		<br />
+		I guess we wouldn't really mind being quarantined if it meant a prince 
+		would accidentally climb into our apartments.<br />
+		<br />
+		<strong><span class="auto-style2">Virender Sehwag tweets about ‘Corona 
+		Mukt Aasan’. <br />
+		<br />
+		</span></strong>Watch what it’s about<br />
+		Sehwag’s&nbsp; image how to keep the seats next to one empty while 
+		commuting in the metro.<br />
+		<img alt="" class="auto-style4" height="508" src="WhatsApp%20Image%202020-08-08%20at%206.16.34%20PM.jpeg" width="629" /><br class="auto-style1" />
+		<br />
+		This image teaches us social distancing<br />
+		<br />
+		<br />
+&nbsp;<strong><span class="auto-style2">Here's a 'Corona-helmet' that uses art 
+		to enforce discipline<br />
+		</span></strong><br />
+		<img alt="" height="456" src="WhatsApp%20Image%202020-08-08%20at%206.26.06%20PM.jpeg" width="744" /><br />
+		<br />
+&nbsp;Clips of a police officer in Chennai wearing a red 'Corona-helmet', 
+		warning road-users who against unnecessarily venturing out in violation 
+		of the 21-day lockdown have been going viral. <br />
+		<br />
+		Made using a discarded helmet, waste paper and painted in bright hues, 
+		the Corona helmet was designed by Chennai-based artist and entrepreneur 
+		Gowtham, who wanted to send a stern and compelling message.<br />
+&nbsp;Gowtham has been installing artworks in public places, working towards 
+		recycling plastic and creating awareness on several contemporary issues, 
+		but the Corona-helmet is turning out to be his most noted piece of work.<br />
+		“Almost a week back, on the day of Janta Curfew Gowtham saw a lot of 
+		people roaming on the roads, as though it was some sort of holiday. 
+		There was hardly any awareness on the seriousness of the situation. 
+		That’s when I decided that something needs to be done about this”, 
+		Gowtham told WION. <br />
+		<br />
+		At first, he made some placards on coronavirus that read, “If you come 
+		out I will come in” and handed them over to the police which they 
+		displayed at the nearby flyover and intersection. But Gowtham wanted to 
+		take his creativity further and give people the “real look and feel of 
+		the coronavirus” and how big a threat it was. <br />
+		<br />
+		Costing less than Rs.500 (most of which was spent on the paint) the 
+		Corona-helmet was made of discarded materials, given that all the shops 
+		were closed due to the ongoing lockdown. In five hours, the helmet was 
+		painted and ready, after which, Gowtham offered it to the nearby police 
+		station. He suggested that this would help the cops in sending out a 
+		stern statement, even without brandishing their batons (lathis).<br />
+		<br />
+		<br />
+		<img alt="" height="501" src="WhatsApp%20Image%202020-08-08%20at%206.42.08%20PM.jpeg" width="591" /><br />
+		<br />
+		The above image was so scary that it seams like I am watching yamraj if 
+		a person sees a police man like this he will be really scared and won't 
+		come out of his house at least for 10 days.<br />
+		<br />
+		<strong><span class="auto-style2">Bhag Corona: Why this game created by 
+		XLRI students featuring PM Modi shooting vaccine at a virus is a great 
+		stressbuster</span></strong><br />
+		<br />
+		<img alt="" height="594" src="WhatsApp%20Image%202020-08-08%20at%207.14.18%20PM.jpeg" width="570" /><br />
+		<br />
+		<br />
+		<br />
+		Even after numerous directives by the Government, advisories by the 
+		World Health Organisation and doctors across the world, some people 
+		still aren't aware of the precautionary measures required to be taken to 
+		halt the spread of the novel Coronavirus. What better than an 
+		entertaining game to teach them about safety? That's exactly what these 
+		two MBA students from XLRI in Jharkhand made possible.<br />
+		<br />
+		Akram Khan and Anushree Warade, both MBA students at XLRI, Jamshedpur 
+		have developed an educational online game based on the Coronavirus. It 
+		educates people on how to stay safe and fight this deadly virus. Called 
+		Bhag Corona, the web browser game is currently available for free on 
+		bhagcorona.com and can be accessed on all devices (mobile, tablet and 
+		desktop).<br />
+		<br />
+		<img alt="" height="676" src="WhatsApp%20Image%202020-08-08%20at%207.16.16%20PM.jpeg" width="392" /><br />
+		<br />
+		<br />
+		<br />
+		<br />
+		The gameplay has been kept simple yet challenging, a player has to shoot 
+		vaccine on viruses that spawn on the screen and the game becomes 
+		progressively tougher as you level up. What catches your attention is 
+		that the medicine is being shot at the virus by an animated character 
+		that resembles Prime Minister Narendra Modi. "At first we had added a 
+		syringe that threw disinfectant/medicine on the virus approaching, later 
+		we replaced it with our PM's face as we thought he should be the 
+		protagonist. As he is on the frontline of dealing with this crisis," 
+		adds Akram. There's a song that plays in the background, which a lot of 
+		us are now familiar with Go Corona Go that was first made famous by the 
+		Union Minister of State for Social Justice and Empowerment Ramdas 
+		Athawale.<br />
+		<br />
+		Once you miss the virus, the game ends and an educational message pops 
+		up on the screen. The objective of the game is to spread awareness about 
+		how to deal with the Coronavirus pandemic and flatten the curve. The 
+		virus starts to become smarter as the score increases. Initially, it 
+		only moves horizontally and learns to move in different directions and 
+		at a faster speed.<br />
+		<br />
+		After playing this game I learnt more precautions to take to avoid 
+		corona virus and I also enjoyed the game<br />
+		<br class="auto-style1" />
+		</td>
+	</tr>
+	<tr>
+		<td style="height: 23px" class="auto-style1">
+		<img alt="" height="353" src="stock-vector-women-positive-thinking-and-healthy-lifestyle-flat-vector-motivational-banner-with-happy-ladies-1302381589.jpg" width="100%" /></td>
+	</tr>
+</table>
+
+</body>
+
+</html>

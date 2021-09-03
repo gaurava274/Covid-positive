@@ -1,0 +1,432 @@
+﻿<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+
+<head>
+<title>July</title>
+<style type="text/css">
+
+
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  -ms-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+body {
+  background: #F0F0F0;
+  font-size: 15px;
+  color: #666;
+  font-family: 'Roboto', sans-serif;
+}
+.content {
+  height: 200px;
+}
+a { text-decoration: none; }
+
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  width: 30%;
+}
+
+.nav-fostrap {
+  display: block;
+  margin-bottom: 15px 0;
+  background: #03A9F4;
+  -webkit-box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.26);
+  -moz-box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.26);
+  -ms-box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.26);
+  -o-box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.26);
+  box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.26);
+  border-radius: 3px;
+}
+
+.nav-fostrap ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  display: block;
+}
+
+.nav-fostrap li {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  display: inline-block;
+  position: relative;
+  font-size: 14;
+  color: #def1f0;
+}
+
+.nav-fostrap li a {
+  padding: 15px 20px;
+  font-size: 14;
+  color: #def1f0;
+  display: inline-block;
+  outline: 0;
+  font-weight: 400;
+}
+
+.nav-fostrap li:hover ul.dropdown { display: block; }
+
+.nav-fostrap li ul.dropdown {
+  position: absolute;
+  display: none;
+  width: 200px;
+  background: #2980B9;
+  -webkit-box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.26);
+  -moz-box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.26);
+  -ms-box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.26);
+  -o-box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.26);
+  box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.26);
+  padding-top: 0;
+}
+
+.nav-fostrap li ul.dropdown li {
+  display: block;
+  list-style-type: none;
+}
+
+.nav-fostrap li ul.dropdown li a {
+  padding: 15px 20px;
+  font-size: 15px;
+  color: #fff;
+  display: block;
+  font-weight: 400;
+}
+
+.nav-fostrap li ul.dropdown li:last-child a { border-bottom: none; }
+
+.nav-fostrap li:hover a {
+  background: #2980B9;
+  color: #fff !important;
+}
+
+.nav-fostrap li:first-child:hover a { border-radius: 3px 0 0 3px; }
+
+.nav-fostrap li ul.dropdown li:hover a { background: rgba(0,0,0, .1); }
+
+.nav-fostrap li ul.dropdown li:first-child:hover a { border-radius: 0; }
+
+.nav-fostrap li:hover .arrow-down { border-top: 5px solid #fff; }
+
+.arrow-down {
+  width: 0;
+  height: 0;
+  border-left: 5px solid transparent;
+  border-right: 5px solid transparent;
+  border-top: 5px solid #def1f0;
+  position: relative;
+  top: 15px;
+  right: -5px;
+  content: '';
+}
+.title-mobile {
+  display: none;
+}
+ @media only screen and (max-width:900px) {
+
+.nav-fostrap {
+  background: #fff;
+  width: 200px;
+  height: 100%;
+  display: block;
+  position: fixed;
+  left: -200px;
+  top: 0px;
+  -webkit-transition: left 0.25s ease;
+  -moz-transition: left 0.25s ease;
+  -ms-transition: left 0.25s ease;
+  -o-transition: left 0.25s ease;
+  transition: left 0.25s ease;
+  margin: 0;
+  border: 0;
+  border-radius: 0;
+  overflow-y: auto;
+  overflow-x: hidden;
+  height: 100%;
+}
+.title-mobile {
+  position: fixed;
+  display: block;
+    top: 10px;
+    font-size: 20px;
+    left: 100px;
+    right: 100px;
+    text-align: center;
+    color: #FFF;
+}
+.nav-fostrap.visible {
+  left: 0px;
+  -webkit-transition: left 0.25s ease;
+  -moz-transition: left 0.25s ease;
+  -ms-transition: left 0.25s ease;
+  -o-transition: left 0.25s ease;
+  transition: left 0.25s ease;
+}
+
+.nav-bg-fostrap {
+  display: inline-block;
+  vertical-align: middle;
+  width: 100%;
+  height: 50px;
+  margin: 0;
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  background: #03A9F4;
+  padding: 12px 0 0 10px;
+  -webkit-box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.26);
+  -moz-box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.26);
+  -ms-box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.26);
+  -o-box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.26);
+  box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.26);
+}
+
+.navbar-fostrap {
+  display: inline-block;
+  vertical-align: middle;
+  height: 50px;
+  cursor: pointer;
+  margin: 0;
+    position: absolute;
+    top: 0;
+    left: 0;
+    padding: 12px;
+}
+
+.navbar-fostrap span {
+  height: 2px;
+  background: #fff;
+  margin: 5px;
+  display: block;
+  width: 20px;
+}
+
+.navbar-fostrap span:nth-child(2) { width: 20px; }
+
+.navbar-fostrap span:nth-child(3) { width: 20px; }
+
+.nav-fostrap ul { padding-top: 50px; }
+
+.nav-fostrap li { display: block; }
+
+.nav-fostrap li a {
+  display: block;
+  color: #505050;
+  font-weight: 600;
+}
+
+.nav-fostrap li:first-child:hover a { border-radius: 0; }
+
+.nav-fostrap li ul.dropdown { position: relative; }
+
+.nav-fostrap li ul.dropdown li a {
+  background: #2980B9 !important;
+  border-bottom: none;
+  color: #fff !important;
+}
+
+.nav-fostrap li:hover a {
+  background: #03A9F4;
+  color: #fff !important;
+}
+
+.nav-fostrap li ul.dropdown li:hover a {
+  background: rgba(0,0,0,.1); !important;
+  color: #fff !important;
+}
+
+.nav-fostrap li ul.dropdown li a { padding: 10px 10px 10px 30px; }
+
+.nav-fostrap li:hover .arrow-down { border-top: 5px solid #fff; }
+
+.arrow-down {
+  border-top: 5px solid #505050;
+  position: absolute;
+  top: 20px;
+  right: 10px;
+}
+
+.cover-bg {
+  background: rgba(0,0,0,0.5);
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+}
+}
+ @media only screen and (max-width:1199px) {
+
+.container { width: 96%; }
+}
+
+.fixed-top {
+  position: fixed;
+  top: 0;
+  right: 0;
+  left: 0;
+}
+.auto-style1 {
+	font-size: x-large;
+}
+.auto-style2 {
+	font-size: xx-large;
+}
+</style>
+<meta content="en-in" http-equiv="Content-Language" />
+<meta content="text/html; charset=utf-8" http-equiv="Content-Type" />
+</head>
+
+<body>
+
+<table style="width: 100%;">
+	<tr>
+		<td style="height: 23px">
+		<img alt="" height="665" src="images.jfif" width="100%" /></td>
+	</tr>
+	<tr>
+		<td>
+		
+<div id="main">
+  <div class="container">
+    <nav>
+      <div class="nav-fostrap">
+        <ul>
+            <li><a href="index.html">Home</a></li>
+          <li><a>Navigate<span class="arrow-down"></span></a>
+            <ul class="dropdown">
+              <li><a href="july.html">July</a></li>
+                         </ul>
+          </li>
+                   
+          
+          <li><a href="aboutus.html">About Us</a></li>
+          <li><a href="contactus.html">Contact Us</a></li>
+        </ul>
+      </div>
+      <div class="nav-bg-fostrap">
+        <a href="" class="title-mobile">Fostrap</a>
+        <div class="navbar-fostrap" style="height: 18px"> </div>
+      </div>
+    </nav>
+</div>
+</div>
+</td>
+	</tr>
+	<tr>
+		<td style="height: 26px" class="auto-style1">
+		<h1 id="mainContentTitle0" class="__reading__mode__extracted__title c006" style="margin-block-end: 0px; margin-inline-end: 0px; margin-block-start: 0px; margin-inline-start: 0px; margin: 0px 0px 0.3rem; padding: 0px; font-size: 2.333rem; font-family: &quot;segoe UI semibold&quot;; font-weight: normal; line-height: 1.2; display: block !important; color: rgb(51, 51, 51); font-style: normal; font-variant-ligatures: normal; font-variant-caps: normal; letter-spacing: normal; orphans: 2; text-align: start; text-indent: 0px; text-transform: none; white-space: normal; widows: 2; word-spacing: 0px; -webkit-text-stroke-width: 0px; background-color: rgb(249, 245, 233); text-decoration-style: initial; text-decoration-color: initial;">
+		Watch: 'Mask' Parottas At A Madurai Restaurant For COVID-19 Awareness</h1>
+		<h1 id="mainContentTitle" class="auto-style2" style="margin-block-end: 0px; margin-inline-end: 0px; margin-block-start: 0px; margin-inline-start: 0px; margin: 0px 0px 0.3rem; padding: 0px; font-size: 2.333rem; font-family: &quot;segoe UI semibold&quot;; font-weight: normal; line-height: 1.2; display: block !important; color: rgb(51, 51, 51); font-style: normal; font-variant-ligatures: normal; font-variant-caps: normal; letter-spacing: normal; orphans: 2; text-align: start; text-indent: 0px; text-transform: none; white-space: normal; widows: 2; word-spacing: 0px; -webkit-text-stroke-width: 0px; background-color: rgb(249, 245, 233); text-decoration-style: initial; text-decoration-color: initial;">
+		<img alt="" height="624" src="processed.jpeg" width="100%" /></h1>
+		<div id="mainContainer" class="__reading__mode__extracted__article__body" style="margin-block-end: 0px; margin-inline-end: 0px; margin-block-start: 0px; margin-inline-start: 0px; margin: 0px; padding: 0px; color: rgb(51, 51, 51); font-family: &quot;Sitka Text&quot;, Georgia, Cambria, Calibri; font-size: 18.24px; font-style: normal; font-variant-ligatures: normal; font-variant-caps: normal; font-weight: 400; letter-spacing: normal; orphans: 2; text-align: start; text-indent: 0px; text-transform: none; white-space: normal; widows: 2; word-spacing: 0px; -webkit-text-stroke-width: 0px; background-color: rgb(249, 245, 233); text-decoration-style: initial; text-decoration-color: initial;">
+			<div style="margin-block-end: 0px; margin-inline-end: 0px; margin-block-start: 0px; margin-inline-start: 0px;">
+				<div id="ins_storybody" class="sp-cn ins_storybody" itemprop="articleBody" style="margin-block-end: 0px; margin-inline-end: 0px; margin-block-start: 0px; margin-inline-start: 0px;">
+					<div class="ins_instory_dv" style="margin-block-end: 0px; margin-inline-end: 0px; margin-block-start: 0px; margin-inline-start: 0px;">
+						<p class="ins_instory_dv_caption sp_b" style="margin-block-end: 0px; margin-inline-end: 0px; margin-block-start: 0px; margin-inline-start: 0px; margin-bottom: 1rem; padding: 0px; hyphens: manual; line-height: 29.184px;">
+						'<span class="auto-style1">Mask' Parotta at a Madurai 
+						restaurant looks just like a three-ply surgical mask.</p>
+						<div itemprop="image" itemscope="" itemtype="https://schema.org/ImageObject" style="margin-block-end: 0px; margin-inline-end: 0px; margin-block-start: 0px; margin-inline-start: 0px;">
+						</div>
+					</div>
+					<b class="place_cont" style="margin-block-end: 0px; margin-inline-end: 0px; margin-block-start: 0px; margin-inline-start: 0px;">
+					Madurai:</b><p style="margin-block-end: 0px; margin-inline-end: 0px; margin-block-start: 0px; margin-inline-start: 0px; margin-bottom: 1rem; padding: 0px; hyphens: manual; line-height: 29.184px;">
+					A restaurant in Tamil Nadu has cooked up an unusual way of 
+					encouraging people to wear masks in the coronavirus crisis.&nbsp;</p>
+					<p style="margin-block-end: 0px; margin-inline-end: 0px; margin-block-start: 0px; margin-inline-start: 0px; margin-bottom: 1rem; padding: 0px; hyphens: manual; line-height: 29.184px;">
+					Presenting the "mask<span>&nbsp;</span><em style="margin-block-end: 0px; margin-inline-end: 0px; margin-block-start: 0px; margin-inline-start: 0px;">parotta</em>" 
+					- a flat bread shaped like a three-ply surgical mask.</p>
+					<p style="margin-block-end: 0px; margin-inline-end: 0px; margin-block-start: 0px; margin-inline-start: 0px; margin-bottom: 1rem; padding: 0px; hyphens: manual; line-height: 29.184px;">
+					And it is a big hit, according to the owner of the 
+					restaurant chain.</p>
+					<p style="margin-block-end: 0px; margin-inline-end: 0px; margin-block-start: 0px; margin-inline-start: 0px; margin-bottom: 1rem; padding: 0px; hyphens: manual; line-height: 29.184px;">
+					"People of Madurai are not very particular about wearing 
+					masks. We introduced 'mask'<span>&nbsp;</span><em style="margin-block-end: 0px; margin-inline-end: 0px; margin-block-start: 0px; margin-inline-start: 0px;">parottas<span>&nbsp;</span></em>to 
+					spread awareness among the people about COVID-19<a href="https://www.ndtv.com/india-news/coronavirus-24-879-cases-in-india-in-24-hours-in-biggest-one-day-jump-7-67-lakh-total-cases-so-far-21-129-deaths-2259616?pfrom=home-coronavirus-topscroll_live" style="margin-block-end: 0px; margin-inline-end: 0px; margin-block-start: 0px; margin-inline-start: 0px; color: rgb(17, 77, 164); text-decoration: none;">,</a>" 
+					Mr Poovalingam, the restaurant manager told news agency ANI.</p>
+					<div class="twitter-tweet twitter-tweet-rendered" style="margin-block-end: 0px; margin-inline-end: 0px; margin-block-start: 0px; margin-inline-start: 0px;">
+					</div>
+					<p style="margin-block-end: 0px; margin-inline-end: 0px; margin-block-start: 0px; margin-inline-start: 0px; margin-bottom: 1rem; padding: 0px; hyphens: manual; line-height: 29.184px;">
+					Each<span>&nbsp;</span><em style="margin-block-end: 0px; margin-inline-end: 0px; margin-block-start: 0px; margin-inline-start: 0px;">parotta</em><span>&nbsp;</span>is 
+					priced at ₹ 50 and since it became a sensation on social 
+					media, people have been ordering it online, said the 
+					restaurant manager.</p>
+					<p style="margin-block-end: 0px; margin-inline-end: 0px; margin-block-start: 0px; margin-inline-start: 0px; margin-bottom: 1rem; padding: 0px; hyphens: manual; line-height: 29.184px;">
+					The 'mask'<span>&nbsp;</span><em style="margin-block-end: 0px; margin-inline-end: 0px; margin-block-start: 0px; margin-inline-start: 0px;">parottas</em><span>&nbsp;</span>have 
+					become a hot favourite on Twitter at a time India has over 
+					7,60,000 coronavirus cases. Nearly 75 per cent of the cases 
+					are from Maharashtra, Tamil Nadu, Karnataka, Delhi, 
+					Telangana, Uttar Pradesh and Andhra Pradesh, according to 
+					the Union Health Ministry data.</p>
+					<p style="margin-block-end: 0px; margin-inline-end: 0px; margin-block-start: 0px; margin-inline-start: 0px; margin-bottom: 1rem; padding: 0px; hyphens: manual; line-height: 29.184px;">
+					Tamil Nadu, with 1,22,350 cases and 17,00 deaths, is the 
+					second worst-hit state.</p>
+					<div id="checked" style="margin-block-end: 0px; margin-inline-end: 0px; margin-block-start: 0px; margin-inline-start: 0px;">
+					</div>
+					<p style="margin-block-end: 0px; margin-inline-end: 0px; margin-block-start: 0px; margin-inline-start: 0px; margin-bottom: 1rem; padding: 0px; hyphens: manual; line-height: 29.184px;">
+					Twitter was flooded with funny posts of Madurai's 'mask'<span>&nbsp;</span><em style="margin-block-end: 0px; margin-inline-end: 0px; margin-block-start: 0px; margin-inline-start: 0px;">parotta</em>. 
+					Some even called it the "corona cuisine".</p>
+					<div class="twitter-tweet twitter-tweet-rendered" style="margin-block-end: 0px; margin-inline-end: 0px; margin-block-start: 0px; margin-inline-start: 0px;">
+					</div>
+					<p style="margin-block-end: 0px; margin-inline-end: 0px; margin-block-start: 0px; margin-inline-start: 0px; margin-bottom: 1rem; padding: 0px; hyphens: manual; line-height: 29.184px;">
+					</p>
+					<div class="twitter-tweet twitter-tweet-rendered" style="margin-block-end: 0px; margin-inline-end: 0px; margin-block-start: 0px; margin-inline-start: 0px;">
+					</div>
+					<p style="margin-block-end: 0px; margin-inline-end: 0px; margin-block-start: 0px; margin-inline-start: 0px; margin-bottom: 1rem; padding: 0px; hyphens: manual; line-height: 29.184px;">
+					</p>
+					<div class="twitter-tweet twitter-tweet-rendered" style="margin-block-end: 0px; margin-inline-end: 0px; margin-block-start: 0px; margin-inline-start: 0px;">
+					</div>
+					<p style="margin-block-end: 0px; margin-inline-end: 0px; margin-block-start: 0px; margin-inline-start: 0px; margin-bottom: 1rem; padding: 0px; hyphens: manual; line-height: 29.184px;">
+					</p>
+					<p style="margin-block-end: 0px; margin-inline-end: 0px; margin-block-start: 0px; margin-inline-start: 0px; margin-bottom: 1rem; padding: 0px; hyphens: manual; line-height: 29.184px;">
+					According to health workers in the state, it is a big 
+					challenge making sure that people use face covers. Nearly 30 
+					per cent of the people in rural areas of<span>&nbsp;</span><a href="https://www.ndtv.com/india-news/coronavirus-tamil-nadu-woman-dressed-as-goddess-mariamman-distributes-masks-2259713" style="margin-block-end: 0px; margin-inline-end: 0px; margin-block-start: 0px; margin-inline-start: 0px; color: rgb(17, 77, 164); text-decoration: none;">Tamil 
+					Nadu</a><span>&nbsp;</span>don't use masks, they say.</p>
+					<div style="margin-block-end: 0px; margin-inline-end: 0px; margin-block-start: 0px; margin-inline-start: 0px;">
+					</div>
+					<p style="margin-block-end: 0px; margin-inline-end: 0px; margin-block-start: 0px; margin-inline-start: 0px; margin-bottom: 1rem; padding: 0px; hyphens: manual; line-height: 29.184px;">
+					</p>
+					<div id="jiosaavn-widget" style="margin-block-end: 0px; margin-inline-end: 0px; margin-block-start: 0px; margin-inline-start: 0px;">
+					</div>
+					<p style="margin-block-end: 0px; margin-inline-end: 0px; margin-block-start: 0px; margin-inline-start: 0px; margin-bottom: 1rem; padding: 0px; hyphens: manual; line-height: 29.184px;">
+					</p>
+					<p style="margin-block-end: 0px; margin-inline-end: 0px; margin-block-start: 0px; margin-inline-start: 0px; margin-bottom: 1rem; padding: 0px; hyphens: manual; line-height: 29.184px;">
+					Not only 'mask'<span>&nbsp;</span><em style="margin-block-end: 0px; margin-inline-end: 0px; margin-block-start: 0px; margin-inline-start: 0px;">parottas</em>, 
+					earlier in April, a sweet shop in Kolkata came up with the<span>&nbsp;</span><a href="https://food.ndtv.com/news/kolkatas-innovative-corona-sandesh-goes-viral-on-social-media-would-you-try-it-2207703" style="margin-block-end: 0px; margin-inline-end: 0px; margin-block-start: 0px; margin-inline-start: 0px; color: rgb(17, 77, 164); text-decoration: none;">'corona<span>&nbsp;</span><em style="margin-block-end: 0px; margin-inline-end: 0px; margin-block-start: 0px; margin-inline-start: 0px;">sandesh</em>'<span>&nbsp;</span></a>when 
+					the Mamata Banerjee government allowed these shops to open 
+					for four hours every day. The pink and white 'corona<span>&nbsp;</span><em style="margin-block-end: 0px; margin-inline-end: 0px; margin-block-start: 0px; margin-inline-start: 0px;">sandesh</em>' 
+					with red spikes appeared at a famous sweet shop in the city. 
+					The shop owner also gave it free to anyone who stepped into 
+					his shop.</p>
+					<p style="margin-block-end: 0px; margin-inline-end: 0px; margin-block-start: 0px; margin-inline-start: 0px; margin-bottom: 1rem; padding: 0px; hyphens: manual; line-height: 29.184px;">
+					From 'mask'<span>&nbsp;</span><em style="margin-block-end: 0px; margin-inline-end: 0px; margin-block-start: 0px; margin-inline-start: 0px;">parottas<span>&nbsp;</span></em>to 
+					'corona<span>&nbsp;</span><em style="margin-block-end: 0px; margin-inline-end: 0px; margin-block-start: 0px; margin-inline-start: 0px;">sandesh</em>', 
+					'corona<span>&nbsp;</span><em style="margin-block-end: 0px; margin-inline-end: 0px; margin-block-start: 0px; margin-inline-start: 0px;">pakoras<span>&nbsp;</span></em>and 
+					'corona burgers, the kitchen became a creative space for 
+					many during the&nbsp;lockdown and the&nbsp;virus inspired people to 
+					invent funky new recipes.&nbsp;</span></p>
+				</div>
+			</div>
+		</div>
+		<div style="margin-block-end: 0px; margin-inline-end: 0px; margin-block-start: 0px; margin-inline-start: 0px; color: rgb(51, 51, 51); font-family: &quot;Sitka Text&quot;, Georgia, Cambria, Calibri; font-style: normal; font-variant-ligatures: normal; font-variant-caps: normal; font-weight: 400; letter-spacing: normal; orphans: 2; text-align: start; text-indent: 0px; text-transform: none; white-space: normal; widows: 2; word-spacing: 0px; -webkit-text-stroke-width: 0px; background-color: rgb(249, 245, 233); text-decoration-style: initial; text-decoration-color: initial;">
+			<br class="Apple-interchange-newline" />
+		</div>
+		<br class="auto-style1" />
+		</td>
+	</tr>
+	<tr>
+		<td style="height: 23px" class="auto-style1">
+		<img alt="" height="353" src="stock-vector-women-positive-thinking-and-healthy-lifestyle-flat-vector-motivational-banner-with-happy-ladies-1302381589.jpg" width="100%" /></td>
+	</tr>
+</table>
+
+</body>
+
+</html>
